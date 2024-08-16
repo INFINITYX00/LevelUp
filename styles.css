@@ -1,3 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9C800;
+}
+
+.grey-box {
+  background-color: #4F4F4F;
+  color: #F9C800;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: 90vh;
+  align-items: center;
+  padding: 40px;
+}
+
+.levelup-logo {
+  width: 165px;
+  height: auto;
+}
+
 h1 {
-  color: red;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+  line-height: 40px;
+}
+
+#start {
+  border-radius: 10px;
+  background: #5BF06C;
+  width: 250px;
+  height: 60px;
+  flex-shrink: 0;
+  text-align: center;
+  /* Horizontally centers the text */
+  font-family: Archivo;
+  font-size: 20px;
+  color: black;
+
+  /* Vertically centers the text */
+  display: flex;
+  align-items: center;
+  /* Vertical centering */
+  justify-content: center;
 }
