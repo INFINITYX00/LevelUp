@@ -1,13 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Chat with AI</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+      #chat {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background: white;
+      }
+      #messages {
+        border: 1px solid #ddd;
+        padding: 10px;
+        height: 300px;
+        overflow-y: auto;
+        margin-bottom: 10px;
+      }
+      #input {
+        width: calc(100% - 22px);
+        padding: 10px;
+        box-sizing: border-box;
+        margin-right: 10px;
+      }
+      #submit {
+        padding: 10px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <h1>HI</h1>
-    <script src="script.js"></script>
+    <div id="chat">
+      <div id="messages"></div>
+      <textarea
+        id="input"
+        rows="4"
+        placeholder="Type your message..."
+      ></textarea>
+      <button id="submit">Send</button>
+    </div>
+    <script>
+      document.getElementById("submit").addEventListener("click", async () => {
+        const inputField = document.getElementById("input");
+        const messagesDiv = document.getElementById("messages");
+        const message = inputField.value.trim();
+
+        if (!message) return;
+
+        // Display the user's message
+        messagesDiv.innerHTML += `<div><strong>You:</strong> ${message}</div>`;
+        inputField.value = "";
+
+        try {
+          const response = await fetch("/api/chat", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ message }),
+          });
+
+          if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(
+              `HTTP error! Status: ${response.status}, Message: ${errorText}`
+            );
+          }
+
+          const data = await response.json();
+          const aiResponse = data.response;
+
+          // Display the AI's response
+          messagesDiv.innerHTML += `<div><strong>AI:</strong> ${aiResponse}</div>`;
+          messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        } catch (error) {
+          console.error("Error:", error);
+          messagesDiv.innerHTML += `<div><strong>AI:</strong> Sorry, there was an error: ${error.message}</div>`;
+        }
+      });
+    </script>
   </body>
 </html>
