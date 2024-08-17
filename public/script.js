@@ -25,13 +25,13 @@ async function generateText() {
     });
 
     if (!response.ok) {
-      throw new Error("Failed to generate text");
+      throw new Error(`Server responded with status ${response.status}`);
     }
 
     const data = await response.json();
     resultDiv.textContent = data.generatedText;
   } catch (error) {
-    console.error("Error:", error);
+    console.error("Error occurred:", error);
     resultDiv.textContent = "An error occurred while generating text.";
   } finally {
     submitButton.disabled = false;
