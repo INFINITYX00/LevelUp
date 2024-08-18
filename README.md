@@ -1,5 +1,12 @@
 # UX/UI Research Presentation: Hustle Ninja - Empowering the Next Generation of Job Seekers
 
+## Screenshots
+![Level-Up-Your-Future](https://github.com/user-attachments/assets/761179e9-4610-4755-a8c1-fd89904e8d9d)
+![levelup2](https://github.com/user-attachments/assets/76931074-b931-4ba7-bae8-3a846c5b0e98)
+
+![level3](https://github.com/user-attachments/assets/59bf7094-84b7-416e-8b5c-dfb91116d9bb)
+
+
 ## Our Problem
 
 Today's 16-18-year-old students face a daunting challenge: navigating the complex landscape of career exploration and preparation. Traditional career resources can be overwhelming, unengaging, and fail to provide personalised guidance. Moreover, there's a growing need to identify and nurture students' passions and motivations to bridge the gap between education and employment.
