@@ -1,38 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Level Up</title>
+    <title>Level Up Your Future</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <div class="grey-box">
-      <img
-        src="../assets/Levelup.svg"
-        alt="Level up logo"
-        class="levelup-logo"
-      />
-      <h1>LEVEL UP Your Future</h1>
-      <h2>
-        Find the perfect career fit and build the portfolio to get you there
-        with the power of AI.
-      </h2>
-      <a href="destination.html" target="_blank">
-        <button id="start">Get Started</button>
-      </a>
-    </div>
-    <script src="script.js" defer></script>
+    <header>
+      <div class="logo">
+        <!-- Logo SVG will go here -->
+        <object
+          type="image/svg+xml"
+          data="assets/content svg and logo/SVG/LOGO.svg"
+          class="logo-svg"
+        >
+          Your browser does not support SVG
+        </object>
+      </div>
+      <nav>
+        <a href="#for-teachers">For Teachers</a>
+        <a href="#about-us">About Us</a>
+        <button class="get-app-btn">Get the App</button>
+      </nav>
+    </header>
+
+    <main>
+      <main>
+        <div class="main-content">
+          <!-- SVG with black rectangle and image -->
+          <svg
+            class="main-content-svg"
+            viewBox="0 0 1200 800"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <!-- SVG Image -->
+            <image
+              href="assets/content svg and logo/SVG/Main content.svg"
+              width="1200"
+              height="620"
+            />
+
+            <!-- Black rectangle to be clickable -->
+            <a href="destination.html">
+              <rect
+                id="level-up-button"
+                x="460"
+                y="500"
+                width="300"
+                height="80"
+                fill="transparent"
+                opacity="0.5"
+              />
+            </a>
+          </svg>
+        </div>
+      </main>
+    
+<script src="script.js" defer></script>
   </body>
 </html>
