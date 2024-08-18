@@ -1,6 +1,5 @@
 # UX/UI Research Presentation: Hustle Ninja - Empowering the Next Generation of Job Seekers
 
-## Screenshots
 
 ## Landing Page
 ![Level-Up-Your-Future](https://github.com/user-attachments/assets/761179e9-4610-4755-a8c1-fd89904e8d9d)
