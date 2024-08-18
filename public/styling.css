@@ -69,7 +69,7 @@ nav a {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
+  margin-top: 10px;
   align-items: flex-start;
   width: 1400px;
 }
@@ -80,7 +80,7 @@ h1 {
 
 #prompt {
   width: 100%;
-  height: 300px;
+  height: 329px;
   border: 4px solid black;
   border-radius: 4px;
   resize: vertical;
@@ -95,10 +95,11 @@ h1 {
   padding: 10px;
   background-color: #ffd700; /* Yellow color for the button */
   color: black;
-  border: none;
+  border: 3px solid black;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 26px;
+  font-size: 30px;
+  font-weight: bold;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -120,12 +121,23 @@ h1 {
   border: 4px solid black;
   border-radius: 4px;
   padding: 8px;
-  height: 310px;
+  height: 340px;
   font-size: 30px;
+  overflow-y: auto;
 }
 
 .input-area,
 .result-area {
   width: 48%; /* Each box takes up 48% of the container width */
   box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.svg-container {
+  text-align: center; /* Center align the SVG */
+  margin-top: 10px; /* Space between SVG and input area */
+}
+
+.svg-file {
+  width: 300px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
 }

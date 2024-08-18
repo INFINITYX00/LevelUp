@@ -1,39 +1,54 @@
-const promptInput = document.getElementById("prompt");
-const submitButton = document.getElementById("submit");
-const resultDiv = document.getElementById("result");
+document.addEventListener("DOMContentLoaded", () => {
+  // Initialize conversation on page load
+  fetchPrompt();
 
-submitButton.addEventListener("click", generateText);
+  document.getElementById("submit").addEventListener("click", async () => {
+    const userInput = document.getElementById("prompt").value;
 
-async function generateText() {
-  const prompt = promptInput.value;
+    if (userInput.trim() === "") return;
 
-  if (!prompt) {
-    alert("Please enter a prompt");
-    return;
-  }
+    // Clear the input box
+    document.getElementById("prompt").value = "";
 
-  submitButton.disabled = true;
-  resultDiv.textContent = "Generating...";
+    // Send user input and get the next prompt or response
+    try {
+      const response = await fetch("/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ userInput }),
+      });
 
+      const data = await response.json();
+      if (data.prompt) {
+        // Display the prompt for the next question
+        document.getElementById("result").innerHTML = `<p>${data.prompt}</p>`;
+      } else if (data.response) {
+        // Display final response or recommendations
+        document.getElementById("result").innerHTML = `<p>${data.response}</p>`;
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  });
+});
+
+// Function to fetch the initial prompt
+async function fetchPrompt() {
   try {
-    const response = await fetch("/generate", {
+    const response = await fetch("/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ prompt }),
     });
 
-    if (!response.ok) {
-      throw new Error(`Server responded with status ${response.status}`);
-    }
-
     const data = await response.json();
-    resultDiv.textContent = data.generatedText;
+    if (data.prompt) {
+      document.getElementById("result").innerHTML = `<p>${data.prompt}</p>`;
+    }
   } catch (error) {
-    console.error("Error occurred:", error);
-    resultDiv.textContent = "An error occurred while generating text.";
-  } finally {
-    submitButton.disabled = false;
+    console.error("Error:", error);
   }
 }
