@@ -18,7 +18,7 @@ To get the project up and running locally, follow these steps:
 2. **Navigate to the Project Directory**: `cd LevelUp`
 3. **Install Dependencies**: `npm install`
 4. **Set Up Environment Variables**: Create a `.env` file in the root directory of the project. Use `.env.example` as a template if provided, and add the necessary environment variables:
- dotenv
+   ```dotenv
    OPENAI_API_KEY=your_openai_api_key
    OPENAI_MODEL_ID=gpt-3.5-turbo
    Replace your_openai_api_key with your actual OpenAI API key.
