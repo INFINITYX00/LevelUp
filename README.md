@@ -10,6 +10,15 @@
 ## AI bot in action
 ![level3](https://github.com/user-attachments/assets/59bf7094-84b7-416e-8b5c-dfb91116d9bb)
 
+## Running the Project
+
+To get the project up and running locally, follow these steps:
+
+1. **Clone the Repository**
+   ```bash
+   git clone <repository-url>
+
+
 
 ## Our Problem
 
