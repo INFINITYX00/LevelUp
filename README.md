@@ -2,10 +2,13 @@
 
 ## Screenshots
 
+## Landing Page
 ![Level-Up-Your-Future](https://github.com/user-attachments/assets/761179e9-4610-4755-a8c1-fd89904e8d9d)
 
+## AI bot in action
 ![levelup2](https://github.com/user-attachments/assets/76931074-b931-4ba7-bae8-3a846c5b0e98)
 
+## AI bot in action
 ![level3](https://github.com/user-attachments/assets/59bf7094-84b7-416e-8b5c-dfb91116d9bb)
 
 
