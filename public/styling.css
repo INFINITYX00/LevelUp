@@ -99,6 +99,7 @@ h1 {
   border-radius: 4px;
   cursor: pointer;
   font-size: 26px;
+  font-weight: bold;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -122,6 +123,7 @@ h1 {
   padding: 8px;
   height: 310px;
   font-size: 30px;
+  overflow-y: auto;
 }
 
 .input-area,
