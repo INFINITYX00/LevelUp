@@ -1,62 +1,85 @@
 body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* Use the background property for gradients */
+}
+
+header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: #F9C800;
+  padding: 20px 5%;
+  background-color: white;
+  border-bottom: 3px solid black;
 }
 
-.grey-box {
-  background-color: #4F4F4F;
-  color: #F9C800;
-  border-radius: 20px;
+.logo-svg {
+  width: 250px; /* Adjust as needed */
+  padding-left: 47px;
+}
+
+nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 90vw;
-  height: 90vh;
-  align-items: center;
-  padding: 40px;
-}
-
-.levelup-logo {
-  width: 165px;
-  height: auto;
-}
-
-h1 {
-  font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 70px;
-  text-align: center;
-}
-
-h2 {
-  font-family: "Archivo", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  margin-bottom: 60px;
-  text-align: center;
-  line-height: 40px;
-}
-
-#start {
-  border-radius: 10px;
-  background: #5BF06C;
-  width: 250px;
-  height: 60px;
-  flex-shrink: 0;
-  text-align: center;
-  /* Horizontally centers the text */
-  font-family: Archivo;
   font-size: 20px;
-  color: black;
+  padding-right: 47px;
+}
 
-  /* Vertically centers the text */
-  display: flex;
-  align-items: center;
-  /* Vertical centering */
-  justify-content: center;
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  padding-left: 75px;
+  padding-right: 75px;
+  color: black;
+}
+
+.get-app-btn {
+  background-color: white; /* Adjust color as needed */
+  color: blue;
+  border: 3px solid blue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-left: 75px;
+}
+
+.main-content {
+  position: relative;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.main-content-svg {
+  width: 85vw;
+  padding-left: 40px;
+  height: auto;
+  margin-left: 50px;
+}
+
+.interactive-elements {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+}
+
+.username-input,
+.password-input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#level-up-button:hover {
+  cursor: pointer;
+}
+
+.main-content {
+  background-image: linear-gradient(
+    62deg,
+    #4bd7d1 2.03%,
+    #fac574 49.55%,
+    #6f2bff 100%
+  );
 }
