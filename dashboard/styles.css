@@ -6,7 +6,7 @@
 }
 
 .draggable.is-pointer-down {
-  background: #09F;
+  background: rgb(0, 255, 242);
 }
 
 .draggable.is-dragging {
