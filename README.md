@@ -1,4 +1,4 @@
-# UX/UI Research Presentation: Level Up - Find that first hustle that's actually lit.
+# UX/UI Research Prototype: Level Up - Find that first hustle that's actually lit.
 
 
 ## Landing Page
