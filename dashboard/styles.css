@@ -14,7 +14,8 @@ header {
 }
 
 .logo-svg {
-  width: 250px; /* Adjust as needed */
+  width: 250px;
+  /* Adjust as needed */
   padding-left: 47px;
 }
 
@@ -34,7 +35,8 @@ nav a {
 }
 
 .get-app-btn {
-  background-color: white; /* Adjust color as needed */
+  background-color: white;
+  /* Adjust color as needed */
   color: blue;
   border: 3px solid blue;
   padding: 10px 20px;
@@ -59,24 +61,25 @@ nav a {
 .draggable7,
 .draggable8 {
   width: 400px;
-  height: 400px;
+  height: fit-content;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .draggable1 {
-  background: #f90;
+  background: rgb(248, 217, 169);
 }
 
 .draggable2 {
-  background: green;
+  background: rgb(218, 253, 218);
 }
 
 .draggable3 {
-  background: purple;
+  background: rgb(252, 225, 167);
 }
 
 .draggable4 {
-  background: blue;
+  background: rgb(157, 157, 231);
 }
 
 .draggable5 {
@@ -103,7 +106,7 @@ nav a {
 .draggable6.is-pointer-down,
 .draggable7.is-pointer-down,
 .draggable8.is-pointer-down {
-  background: rgb(0, 255, 242);
+  background: rgb(192, 247, 244);
 }
 
 .draggable1.is-dragging,
