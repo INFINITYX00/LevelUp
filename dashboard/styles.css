@@ -1,79 +1,7 @@
-.draggable1 {
-  width: 400px;
-  height: 400px;
-  background: #f90;
-  border-radius: 10px;
-}
-.draggable2 {
-  width: 400px;
-  height: 400px;
-  background: green;
-  border-radius: 10px;
-}
-.draggable3 {
-  width: 400px;
-  height: 400px;
-  background: purple;
-  border-radius: 10px;
-}
-.draggable4 {
-  width: 400px;
-  height: 400px;
-  background: blue;
-  border-radius: 10px;
-}
-.draggable5 {
-  width: 400px;
-  height: 400px;
-  background: brown;
-  border-radius: 10px;
-}
-.draggable6 {
-  width: 400px;
-  height: 400px;
-  background: aqua;
-  border-radius: 10px;
-}
-.draggable7 {
-  width: 400px;
-  height: 400px;
-  background: violet;
-  border-radius: 10px;
-}
-.draggable8 {
-  width: 400px;
-  height: 400px;
-  background: red;
-  border-radius: 10px;
-}
-
-.draggable1.is-pointer-down,
-.draggable2.is-pointer-down,
-.draggable3.is-pointer-down,
-.draggable4.is-pointer-down,
-.draggable5.is-pointer-down,
-.draggable6.is-pointer-down,
-.draggable7.is-pointer-down,
-.draggable8.is-pointer-down {
-  background: rgb(0, 255, 242);
-}
-
-.draggable1.is-dragging,
-.draggable2.is-dragging,
-.draggable3.is-dragging,
-.draggable4.is-dragging,
-.draggable5.is-dragging,
-.draggable6.is-dragging,
-.draggable7.is-dragging,
-.draggable8.is-dragging {
-  opacity: 0.7;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  /* Use the background property for gradients */
 }
 
 header {
@@ -113,4 +41,78 @@ nav a {
   border-radius: 5px;
   font-size: 20px;
   margin-left: 75px;
+}
+
+.draggable-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+
+.draggable1,
+.draggable2,
+.draggable3,
+.draggable4,
+.draggable5,
+.draggable6,
+.draggable7,
+.draggable8 {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.draggable1 {
+  background: #f90;
+}
+
+.draggable2 {
+  background: green;
+}
+
+.draggable3 {
+  background: purple;
+}
+
+.draggable4 {
+  background: blue;
+}
+
+.draggable5 {
+  background: brown;
+}
+
+.draggable6 {
+  background: aqua;
+}
+
+.draggable7 {
+  background: violet;
+}
+
+.draggable8 {
+  background: red;
+}
+
+.draggable1.is-pointer-down,
+.draggable2.is-pointer-down,
+.draggable3.is-pointer-down,
+.draggable4.is-pointer-down,
+.draggable5.is-pointer-down,
+.draggable6.is-pointer-down,
+.draggable7.is-pointer-down,
+.draggable8.is-pointer-down {
+  background: rgb(0, 255, 242);
+}
+
+.draggable1.is-dragging,
+.draggable2.is-dragging,
+.draggable3.is-dragging,
+.draggable4.is-dragging,
+.draggable5.is-dragging,
+.draggable6.is-dragging,
+.draggable7.is-dragging,
+.draggable8.is-dragging {
+  opacity: 0.7;
 }
