@@ -1,4 +1,4 @@
-# UX/UI Research Presentation: Hustle Ninja - Empowering the Next Generation of Job Seekers
+# UX/UI Research Presentation: Level Up - Find that first hustle that's actually lit.
 
 
 ## Landing Page
@@ -36,7 +36,7 @@ Hustle Ninja is a gamified, AI-driven platform designed to empower students aged
 
 ### Interactive AI Assistant (Hustle Ninja)
 
-*   **Why the Current ChatGPT Interface is Unsuitable:** The standard ChatGPT interface lacks personality and visual appeal, failing to engage a generation accustomed to vibrant digital experiences. Research suggests that Gen Z responds positively to gamification, humor, and relatable characters.
+*   **Why the Current ChatGPT Interface is Unsuitable:** The standard ChatGPT interface lacks personality and visual appeal, failing to engage a generation accustomed to vibrant digital experiences. Research suggests that Gen Z responds positively to gamification, humour, and relatable characters.
 
 *   **Our Redesign:** Hustle Ninja, a cute ninja cat avatar, serves as the student's friendly and knowledgeable career guide. The conversational interface uses age-appropriate language and gamified elements to foster engagement.
 
@@ -76,9 +76,6 @@ Hustle Ninja is a gamified, AI-driven platform designed to empower students aged
 
 *   **Bridging the Gap:** Connect students with relevant resources and opportunities
 
-## Call to Action
-
-Join us in building Hustle Ninja, a platform that transforms career exploration into an exciting adventure. Together, let's empower the next generation to achieve their full potential!
 
 ## Additional Considerations (Future Development)
 
