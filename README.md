@@ -1,4 +1,5 @@
 # UX/UI Research Prototype: Level Up - Find that first hustle that's actually lit.
+![UX UI Study](https://github.com/user-attachments/assets/c01c8ec1-8824-4511-8c59-afd0a58a32fc)
 
 
 ## Landing Page
@@ -101,7 +102,7 @@ The [project codebase](https://github.com/INFINITYX00/LevelUp) was composed with
 
 | HTML | 27.3 |
 
-![UX UI Study](https://github.com/user-attachments/assets/c01c8ec1-8824-4511-8c59-afd0a58a32fc)
+
 
 
 
