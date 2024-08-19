@@ -93,6 +93,11 @@ Hustle Ninja is a gamified, AI-driven platform designed to empower students aged
 
 ![mvps](https://github.com/user-attachments/assets/7ae5c73a-dc2c-419b-b501-5f762ce67201)
 
+## Future Roadmap
+
+
+![Roadmap](https://github.com/user-attachments/assets/99acaffd-8f56-4ed0-8671-e33fd25a3ef7)
+
 
 ## Project Technology Stack
 
