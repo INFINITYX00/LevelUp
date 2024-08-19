@@ -47,25 +47,25 @@
   border-radius: 10px;
 }
 
-.draggable1.is-pointer-down
-  .draggable2.is-pointer-down
-  .draggable3.is-pointer-down
-  .draggable4.is-pointer-down
-  .draggable5.is-pointer-down
-  .draggable6.is-pointer-down
-  .draggable7.is-pointer-down
-  .draggable8.is-pointer-down {
+.draggable1.is-pointer-down,
+.draggable2.is-pointer-down,
+.draggable3.is-pointer-down,
+.draggable4.is-pointer-down,
+.draggable5.is-pointer-down,
+.draggable6.is-pointer-down,
+.draggable7.is-pointer-down,
+.draggable8.is-pointer-down {
   background: rgb(0, 255, 242);
 }
 
-.draggable1.is-dragging
-  .draggable2.is-dragging
-  .draggable3.is-dragging
-  .draggable4.is-dragging
-  .draggable5.is-dragging
-  .draggable6.is-dragging
-  .draggable7.is-dragging
-  .draggable8.is-dragging {
+.draggable1.is-dragging,
+.draggable2.is-dragging,
+.draggable3.is-dragging,
+.draggable4.is-dragging,
+.draggable5.is-dragging,
+.draggable6.is-dragging,
+.draggable7.is-dragging,
+.draggable8.is-dragging {
   opacity: 0.7;
 }
 
