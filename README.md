@@ -88,18 +88,20 @@ Hustle Ninja is a gamified, AI-driven platform designed to empower students aged
 
 **Remember, Hustle Ninja is not just a tool; it's a companion on the journey towards a fulfilling career. By combining cutting-edge technology, captivating design, and personalised guidance, we can truly level up the future for our students.**
 
+
+## Our MVPS
+
+![mvps](https://github.com/user-attachments/assets/7ae5c73a-dc2c-419b-b501-5f762ce67201)
+
+
 ## Project Technology Stack
 
 The [project codebase](https://github.com/INFINITYX00/LevelUp) was composed with the following list of technologies:
 
 | Language | % of Codebase |
-
-| - | - |
-
+|---|---|
 | CSS | 40.6 |
-
 | JavaScript | 32.1 |
-
 | HTML | 27.3 |
 
 
