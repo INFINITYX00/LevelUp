@@ -1,7 +1,7 @@
 .draggable {
   width: 140px;
   height: 140px;
-  background: #F90;
+  background: #f90;
   border-radius: 10px;
 }
 
@@ -11,4 +11,50 @@
 
 .draggable.is-dragging {
   opacity: 0.7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* Use the background property for gradients */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: white;
+  border-bottom: 3px solid black;
+}
+
+.logo-svg {
+  width: 250px; /* Adjust as needed */
+  padding-left: 47px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding-right: 47px;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  padding-left: 75px;
+  padding-right: 75px;
+  color: black;
+}
+
+.get-app-btn {
+  background-color: white; /* Adjust color as needed */
+  color: blue;
+  border: 3px solid blue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-left: 75px;
 }
