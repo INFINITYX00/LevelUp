@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: white;
+  border-bottom: 3px solid black;
+}
+
+.logo-svg {
+  width: 250px;
+  /* Adjust as needed */
+  padding-left: 47px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding-right: 47px;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  padding-left: 75px;
+  padding-right: 75px;
+  color: black;
+}
+
+.get-app-btn {
+  background-color: white;
+  /* Adjust color as needed */
+  color: blue;
+  border: 3px solid blue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-left: 75px;
+}
+
+.draggable-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+
+.draggable1,
+.draggable2,
+.draggable3,
+.draggable4,
+.draggable5,
+.draggable6,
+.draggable7,
+.draggable8 {
+  width: 400px;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.draggable1 {
+  background: rgb(248, 217, 169);
+}
+
+.draggable2 {
+  background: rgb(218, 253, 218);
+}
+
+.draggable3 {
+  background: rgb(252, 225, 167);
+}
+
+.draggable4 {
+  background: rgb(157, 157, 231);
+}
+
+.draggable5 {
+  background: brown;
+}
+
+.draggable6 {
+  background: aqua;
+}
+
+.draggable7 {
+  background: violet;
+}
+
+.draggable8 {
+  background: red;
+}
+
+.draggable1.is-pointer-down,
+.draggable2.is-pointer-down,
+.draggable3.is-pointer-down,
+.draggable4.is-pointer-down,
+.draggable5.is-pointer-down,
+.draggable6.is-pointer-down,
+.draggable7.is-pointer-down,
+.draggable8.is-pointer-down {
+  background: rgb(192, 247, 244);
+}
+
+.draggable1.is-dragging,
+.draggable2.is-dragging,
+.draggable3.is-dragging,
+.draggable4.is-dragging,
+.draggable5.is-dragging,
+.draggable6.is-dragging,
+.draggable7.is-dragging,
+.draggable8.is-dragging {
+  opacity: 0.7;
+}
